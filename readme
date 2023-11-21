@@ -1,5 +1,5 @@
 User Discord Maintainer
-Ce script Python maintient la connexion d'un bot Discord sur un canal vocal spécifique.
+Ce script Python maintient la connexion d'un utilisateur avec un token Discord sur un canal vocal spécifique.
 
 Configuration
 Token utilisateur : Remplacez la variable usertoken dans le script par votre propre token utilisateur.
