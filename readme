@@ -14,23 +14,6 @@ Identifiant du canal vocal : Remplacez la variable CHANNEL_ID par l'identifiant 
 CHANNEL_ID = "votre_identifiant_de_canal_vocal"
 Exemple: CHANNEL_ID = "1177665799381585961"
 
-À partir de la ligne 120, changez la variable channel_id par l'identifiant de votre canal textuel.
-channel_id = "votre_identifiant_de_canal_textuel"
-Exemple: CHANNEL_ID = "1176915542439886978"
-
-À partir de la ligne 122, remplacez "votre message ici" par votre message, par exemple : "by fr41tr42"
-{"message": "votre message", "delay_seconds": le délai du message en seconde}
-Exemple: {"message": "by fr41tr42", "delay_seconds": le délai du message en seconde}
-
-Ensuite, remplacez le délai du message en seconde}, par l'intervalle de l'envoi du message en seconde, par exemple : 30},
-{"message": "votre message", "delay_seconds": le délai du message en seconde},
-Exemple: {"message": "by fr41tr42", "delay_seconds": 30}
-
-La ligne doit ressembler à ceci :
-{"message": "by fr41tr42", "delay_seconds": 10},
-
-Veillez à ne pas mettre un intervalle trop court, sinon cela ne fonctionnera pas correctement.
-
 # Installation
 Installez les dépendances nécessaires en exécutant la commande suivante dans votre terminal 
 (assurez-vous d'être dans le répertoire du script):
