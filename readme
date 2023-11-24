@@ -2,7 +2,7 @@
 Ce script Python permet de maintenir la connexion d'un utilisateur avec un token Discord sur un canal vocal spécifique.
 
 # Configuration
-oken utilisateur : Remplacez la variable `usertoken` dans le script par votre propre token utilisateur.
+Token utilisateur : Remplacez la variable `usertoken` dans le script par votre propre token utilisateur.
 usertoken = "VOTRE_TOKEN_ICI"
 Exemple: usertoken = "grveb.216545.cez4564f56zevse1v1es64vesv65se5v"
 
