@@ -1,37 +1,57 @@
-User Discord Maintainer
-Ce script Python maintient la connexion d'un utilisateur avec un token Discord sur un canal vocal spécifique.
+# User Discord Maintainer
+Ce script Python permet de maintenir la connexion d'un utilisateur avec un token Discord sur un canal vocal spécifique et d'envoyer des messages automatisés dans un canal textuel spécifique.
 
-Configuration
-Token utilisateur : Remplacez la variable usertoken dans le script par votre propre token utilisateur.
+# Configuration
+oken utilisateur : Remplacez la variable `usertoken` dans le script par votre propre token utilisateur.
 usertoken = "VOTRE_TOKEN_ICI"
+Exemple: usertoken = "grveb.216545.cez4564f56zevse1v1es64vesv65se5v"
 
 Identifiant du serveur : Remplacez la variable GUILD_ID par l'identifiant de votre serveur.
 GUILD_ID = "votre_identifiant_de_serveur"
+Exemple: GUILD_ID = "1176620424973525175"
 
 Identifiant du canal vocal : Remplacez la variable CHANNEL_ID par l'identifiant de votre canal vocal.
 CHANNEL_ID = "votre_identifiant_de_canal_vocal"
+Exemple: CHANNEL_ID = "1177665799381585961"
 
-Installation
+À partir de la ligne 120, changez la variable channel_id par l'identifiant de votre canal textuel.
+channel_id = "votre_identifiant_de_canal_textuel"
+Exemple: CHANNEL_ID = "1176915542439886978"
+
+À partir de la ligne 122, remplacez "votre message ici" par votre message, par exemple : "by fr41tr42"
+{"message": "votre message", "delay_seconds": le délai du message en seconde}
+Exemple: {"message": "by fr41tr42", "delay_seconds": le délai du message en seconde}
+
+Ensuite, remplacez le délai du message en seconde}, par l'intervalle de l'envoi du message en seconde, par exemple : 30},
+{"message": "votre message", "delay_seconds": le délai du message en seconde},
+Exemple: {"message": "by fr41tr42", "delay_seconds": 30}
+
+La ligne doit ressembler à ceci :
+{"message": "by fr41tr42", "delay_seconds": 10},
+
+Veillez à ne pas mettre un intervalle trop court, sinon cela ne fonctionnera pas correctement.
+
+# Installation
 Installez les dépendances nécessaires en exécutant la commande suivante dans votre terminal 
 (assurez-vous d'être dans le répertoire du script):
 pip install -r requirements.txt
 
-Exécutez le script Python :
+# Exécutez le script Python :
 python main.py
 
-Utilisation
-Le script se connectera au canal vocal spécifié sur le serveur Discord et restera en ligne.
+# Utilisation
+Le script se connectera au canal vocal spécifié sur le serveur Discord, restera en ligne et enverra des messages avec un intervalle en seconde pour chaque message configurable.
 
-Contribuer
+# Contribuer
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une Pull Request ou à signaler des problèmes dans la section des problèmes.
 
-Remarques
+# Remarques
 Assurez-vous de respecter les règles de Discord et d'avoir les autorisations appropriées pour utiliser ce script. 
 Vous pouvez ouvrir main.py avec Visual Studio Code ou tout autre éditeur pour obtenir plus de détails.
 
-Licence
+# Licence
 Ce projet est sous licence MIT.
 
-code By fr41tr42
-discord serveur: https://discord.gg/SpjBYxWw
-My discord: fr41tr42
+# Code By fr41tr42
+# Serveur Discord : https://discord.gg/ARa5tr362K
+# Mon Discord : fr41tr42
