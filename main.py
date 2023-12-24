@@ -17,7 +17,8 @@ CHANNEL_ID = 285832872872843
 usertoken = "token"
 
 # Ne pas changer, sauf si vous voulez vous mettre en mode hors ligne, ou désactiver le mode muet et sourdine
-# (il est déjà configuré pour être en mode muet et sourdine et en ligne).status = "online"
+# (il est déjà configuré pour être en mode muet et sourdine et en ligne).
+status = "online"
 SELF_MUTE = True
 SELF_DEAF = True
 
