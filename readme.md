@@ -36,5 +36,3 @@ Vous pouvez ouvrir main.py avec Visual Studio Code ou tout autre éditeur pour o
 Ce projet est sous licence MIT.
 
 # Code By fr41tr42
-# Serveur Discord : https://discord.gg/ARa5tr362K
-# Mon Discord : fr41tr42
