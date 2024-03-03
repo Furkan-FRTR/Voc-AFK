@@ -35,4 +35,4 @@ Vous pouvez ouvrir main.py avec Visual Studio Code ou tout autre éditeur pour o
 # Licence
 Ce projet est sous licence MIT.
 
-# Code By fr41tr42
+# Code By Furkan-FRTR
