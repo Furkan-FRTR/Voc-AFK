@@ -22,7 +22,7 @@ status = "online"
 SELF_MUTE = True
 SELF_DEAF = True
 
-# Ne pas modifier by fr41tr42 
+# Ne pas modifier by Furkan-FRTR
 headers = {"Authorization": usertoken, "Content-Type": "application/json"}
 
 validate = requests.get('https://discordapp.com/api/v9/users/@me', headers=headers)
