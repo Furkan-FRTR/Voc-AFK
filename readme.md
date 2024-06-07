@@ -23,7 +23,7 @@ pip install -r requirements.txt
 python main.py
 
 # Utilisation
-Le script se connectera au canal vocal spécifié sur le serveur Discord, restera en ligne 
+Le script se connectera au canal vocal spécifié sur le serveur Discord restera en ligne si il est deconnecter de la vocal il se reconnecte a la vocal 30 seconde apres
 
 # Contribuer
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une Pull Request ou à signaler des problèmes dans la section des problèmes.
