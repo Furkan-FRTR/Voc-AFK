@@ -1,4 +1,4 @@
-# User Discord Maintainer
+# Voc-AFK 
 Ce script Python permet de maintenir la connexion d'un utilisateur avec un token Discord sur un canal vocal spécifique.
 
 # Configuration
