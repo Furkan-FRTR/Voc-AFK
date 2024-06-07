@@ -83,7 +83,7 @@ def run_joiner():
     print(f"Connecté en tant que {username}#{discriminator} ({userid}).")
     while True:
         joiner(usertoken, status)
-        time.sleep(30) 
+        time.sleep(60) 
 
 def run():
     app.run(host='0.0.0.0', port=8080)
