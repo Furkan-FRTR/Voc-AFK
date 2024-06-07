@@ -1,5 +1,5 @@
 # Voc-AFK 
-Ce script Python permet de maintenir la connexion d'un utilisateur avec un token Discord sur un canal vocal spécifique.
+Le script se connectera au canal vocal spécifié sur le serveur Discord restera en ligne si il est deconnecter de la vocal il se reconnecte a la vocal 60 seconde apres
 
 # Configuration
 Token utilisateur : Remplacez la variable `usertoken` dans le script par votre propre token utilisateur.
@@ -21,9 +21,6 @@ pip install -r requirements.txt
 
 # Exécutez le script Python :
 python main.py
-
-# Utilisation
-Le script se connectera au canal vocal spécifié sur le serveur Discord restera en ligne si il est deconnecter de la vocal il se reconnecte a la vocal 60 seconde apres
 
 # Contribuer
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une Pull Request ou à signaler des problèmes dans la section des problèmes.
