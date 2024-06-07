@@ -23,7 +23,7 @@ pip install -r requirements.txt
 python main.py
 
 # Utilisation
-Le script se connectera au canal vocal spécifié sur le serveur Discord, restera en ligne et enverra des messages avec un intervalle en seconde pour chaque message configurable.
+Le script se connectera au canal vocal spécifié sur le serveur Discord, restera en ligne 
 
 # Contribuer
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une Pull Request ou à signaler des problèmes dans la section des problèmes.
