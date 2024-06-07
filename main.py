@@ -4,16 +4,15 @@ import time
 import requests
 import asyncio
 import websocket
-import ssl
 from flask import Flask
 from threading import Thread
 
 app = Flask(__name__)
 
 # GUILD_ID est l'identifiant du serveur 
-GUILD_ID = 6546545645641141
+GUILD_ID = 65465484651321213213
 # CHANNEL_ID est l'identifiant du canal vocal.
-CHANNEL_ID = 555485151147141
+CHANNEL_ID = 2112165446541654116132
 # Votre token va entre les crochets.
 usertoken = "ton token ici"
 
@@ -37,53 +36,45 @@ discriminator = userinfo["discriminator"]
 userid = userinfo["id"]
 
 def joiner(token, status):
-    try:
-        ws = websocket.WebSocket(sslopt={"cert_reqs": ssl.CERT_NONE})
-        ws.connect('wss://gateway.discord.gg/?v=9&encoding=json')
-        start = json.loads(ws.recv())
-        heartbeat = start['d']['heartbeat_interval']
-        auth = {
-            "op": 2,
-            "d": {
-                "token": token,
-                "properties": {
-                    "$os": "Windows 10",
-                    "$browser": "Google Chrome",
-                    "$device": "Windows"
-                },
-                "presence": {
-                    "status": status,
-                    "afk": False
-                }
+    ws = websocket.WebSocket()
+    ws.connect('wss://gateway.discord.gg/?v=9&encoding=json')
+    start = json.loads(ws.recv())
+    heartbeat = start['d']['heartbeat_interval']
+    auth = {
+        "op": 2,
+        "d": {
+            "token": token,
+            "properties": {
+                "$os": "Windows 10",
+                "$browser": "Google Chrome",
+                "$device": "Windows"
             },
-            "s": None,
-            "t": None
-        }
-        vc = {
-            "op": 4,
-            "d": {
-                "guild_id": GUILD_ID,
-                "channel_id": CHANNEL_ID,
-                "self_mute": SELF_MUTE,
-                "self_deaf": SELF_DEAF
+            "presence": {
+                "status": status,
+                "afk": False
             }
+        },
+        "s": None,
+        "t": None
+    }
+    vc = {
+        "op": 4,
+        "d": {
+            "guild_id": GUILD_ID,
+            "channel_id": CHANNEL_ID,
+            "self_mute": SELF_MUTE,
+            "self_deaf": SELF_DEAF
         }
-        ws.send(json.dumps(auth))
-        ws.send(json.dumps(vc))
-        time.sleep(heartbeat / 1000)
-        ws.send(json.dumps({"op": 1, "d": None}))
-    except ssl.SSLEOFError as e:
-        print(f"SSL error: {e}")
-    except websocket.WebSocketException as e:
-        print(f"WebSocket error: {e}")
-    finally:
-        ws.close()
+    }
+    ws.send(json.dumps(auth))
+    ws.send(json.dumps(vc))
+    time.sleep(heartbeat / 1000)
+    ws.send(json.dumps({"op": 1, "d": None}))
 
 def run_joiner():
     print(f"Connecté en tant que {username}#{discriminator} ({userid}).")
     while True:
         joiner(usertoken, status)
-        time.sleep(60) 
 
 def run():
     app.run(host='0.0.0.0', port=8080)
