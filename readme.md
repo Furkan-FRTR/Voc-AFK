@@ -1,5 +1,5 @@
 # Voc-AFK 
-Le script se connectera au canal vocal spécifié sur le serveur Discord restera en ligne si il est deconnecter de la vocal il se reconnecte a la vocal 30 seconde apres
+Le script se connectera au canal vocal spécifié sur le serveur Discord restera en ligne si il est deconnecter de la vocal il se reconnecte en vocal tout seul
 
 # Configuration
 Token utilisateur : Remplacez la variable `usertoken` dans le script par votre propre token utilisateur.
